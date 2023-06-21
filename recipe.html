@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What are we cookin'?</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Esteban">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+</head>
+<body>
+  <hr>
+  <header>
+    <h1>what are we cookin'?</h1>
+    <div class="search-container">
+        <div class="search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <input type="text" placeholder="Search" class="search-input">
+      </div>      
+  </header>
+
+    <!-- Hamburger Menu Start -->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <li><a href="index.html#apps">Apps</a></li>
+          <li><a href="index.html#mains">Mains</a></li>
+          <li><a href="index.html#sides">Sides</a></li>
+          <li><a href="index.html#desserts">Desserts</a></li>
+          <li><a href="index.html#drinks">Drinks</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Hamburger Menu End -->
+
+    <hr>
+  
+  <!-- Recipe Container -->
+  <div class="recipeContainer">
+    <div class="imgContainer">
+        <img src="images/food1.jpg" alt="Recipe Name" class="recipeCoverImg">
+    </div>
+
+    <div class="recipeInfo">
+        <div class="recipeName">
+            <h2>Grilled Salmon with rice and beans</h2>
+        </div>
+        <div class="recipeDescription">
+            <p>This super easy, all-in-one barramundi fish parchment bake with bell peppers, 
+              zucchini, onion, and asparagus gets an herb-forward finish from chermoula, a 
+              North African sauce made with cilantro, parsley, and a blend of spices.</p>
+        </div>
+    </div>
+
+    <!-- Ingredients Container -->
+    <div class="ingredientsContainer">
+      <h3>Ingredients</h3>
+      <div class="ingredients">
+          <ul>
+              <li>Salmon</li>
+              <li>Rice</li>
+              <li>Beans</li>
+              <li>Spices</li>
+              <li>Salt</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer"></div> <!-- Spacer -->
+
+  <hr>
+
+  <!-- Instructions Container -->
+  <div class="instructionsTitle">
+    <h3>Instructions</h3>
+  </div>
+  <div class="instructions">
+      <p>1. Cut off a piece of parchment about 16 inches long. Lay it down on a cookie sheet.</p>
+      <p>2. Fold the paper in half lengthwise (short side to short side) pressing to make a 
+        crease, then reopen. Place your ingredients on one side of the parchment, putting 
+        thinly cut vegetables down first, the fish atop them, and drizzle the chermoula all over.</p>
+      <p>3. Fold the other half of the parchment over the ingredients and begin securing the paper down 
+        by starting in one corner and folding over in half inch segments, starting each new fold right 
+        after the one before ends. You can staple these segments down so that they have no risk of 
+        coming undone, especially if it’s your first time doing this. Tuck your final fold underneath 
+        the opposite corner of the parchment.</p>
+  </div>
+
+  <div class="spacer"></div> <!-- Spacer -->
+  <div class="spacer"></div> <!-- Spacer -->
+  
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Fridge</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
