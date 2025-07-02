@@ -1,0 +1,390 @@
+/*Stylesheet for Evan Hanson's Portfolio*/
+
+/*---------------------General---------------------*/
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    height: 100%;
+    margin: 0;
+  }
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.main-content {
+  min-height: 100%;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+  
+/*---------------------Navigation---------------------*/
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  height: 16px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav a:hover{
+  background-color: #494949;
+}
+
+header nav a:before,
+header nav a:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #f2f2f2;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 100%
+}
+
+header nav a:before {
+  left: 50%;
+  margin-left: -50%;
+}
+
+header nav a:after {
+  right: 50%;
+  margin-right: -50%;
+}
+
+header nav a:hover:before,
+header nav a:hover:after {
+  width: 100%;
+}
+
+/*---------------------Sections---------------------*/
+section h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+section p,
+section ul {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+section ul li {
+  margin-bottom: 1em;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+section label,
+section input[type="submit"] {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea {
+  border: 1px solid #333;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+/*---------------------TOP TITLE---------------------*/
+.top_title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #333;
+  margin: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+/*---------------------Lists---------------------*/
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+/*---------------------Footer---------------------*/
+footer {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  height: 100px;
+  line-height: 100px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*---------------------Images---------------------*/
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.5);
+  transition: all 1s ease;
+}  
+
+.profile-pic:hover{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
+  transform: translateY(10px);
+}
+
+.experience-image {
+  width: 20px;
+  height: 20px;
+}
+
+.square-image {
+  width: 20px;
+  height: 150px;
+}
+
+/*-----------Glare anomation for Profile picture--------------*/
+.glare {
+
+}
+
+/*---------------------Text Box---------------------*/
+.box-container {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 70%;
+  height: auto;
+  background-color: #E0E0E0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+/*---------------Used for LinkedIn and GitHub links-------------*/
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+.link-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-icon:hover {
+  transform: rotate(360deg);
+  }
+
+.link {
+  color: #0277BD;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 1s ease-in-out;
+}
+
+.link:hover {
+  color: #333;
+}
+
+/*---------------------Security+ Badge---------------------*/
+.badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+/*---------------------Horizontal Line Animation---------------------*/
+.animated-line {
+  width: 100%;
+  height: 1px;
+  background-color: #D3D3D3;
+  animation: animate-line 1.6s ease-in-out;
+}
+
+@keyframes animate-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/*---------------------TTT Game---------------------*/
+/* Style the game board */
+/* Center the game board and the restart button */
+.game, #restartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* Style the game board */
+.game {
+  background-color: #E0E0E0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cell {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  color: #333;
+  cursor: pointer;
+  font-size: 50px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.cell:hover {
+  background-color: #e6e5e5;
+}
+
+/* Style the restart button */
+#restartButton {
+  background-color: #2ECC40;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #333;
+  cursor: pointer;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  width: 200px;
+}
+
+#restartButton:hover {
+  background-color: #494949;
+}
+
+/*---------------------About Me Paragraphs---------------------*/
+.aboutmep {
+  margin-bottom: 2em;
+  margin-top: 1em;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  padding-top: 1em;
+}
+
+/*---------------------Hover to Show More---------------------*/
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

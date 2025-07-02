@@ -1,0 +1,587 @@
+/*Stylesheet for Evan Hanson's Portfolio*/
+
+/*---------------------General---------------------*/
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1C3738;
+    margin: 0;
+    padding: 0;
+    background-color: #F4FFF8;
+    height: 100%;
+    margin: 0;
+  }
+
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+}
+
+.main-content {
+  min-height: 100%;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #1C3738;
+  margin: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+#aboutH2 {
+  position: relative;
+  left: 180px;
+  top: 300px;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* Remove the default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+  
+/*---------------------Navigation---------------------*/
+header {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  height: 16px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #1C3738;
+  text-decoration: none;
+  padding: 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav a:hover{
+  /* background-color: #F4FFF8; */
+}
+
+header nav a:before,
+header nav a:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #F19C79;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 100%
+}
+
+header nav a:before {
+  left: 50%;
+  margin-left: -50%;
+}
+
+header nav a:after {
+  right: 50%;
+  margin-right: -50%;
+}
+
+header nav a:hover:before,
+header nav a:hover:after {
+  width: 100%;
+}
+
+/*---------------------Sections---------------------*/
+section h2 {
+  position: relative;
+  left: 20px;
+  top: 200px;
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+section p,
+section ul {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+section ul li {
+  margin-bottom: 1em;
+}
+
+/*---------------------Form---------------------*/
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #F19C79;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  background-color: #8BAAAD;
+  color: #F5FFF8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #1C3738;
+}
+
+/*---------------------TOP TITLE---------------------*/
+.top_title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #1C3738;
+  margin: 10px;
+  overflow: hidden;
+  border: none;
+}
+
+/*---------------------Art Square---------------------*/
+.square {
+  position: relative;
+  right: 25%;
+  bottom: 130px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50);
+  display: inline-block;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.square:hover {
+  animation: colorAnimation 1s;
+}
+
+.square2 {
+  position: relative;
+  left: 46%;
+  bottom: 350px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50);
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.square2:hover {
+  animation: colorAnimation 1s;
+}
+
+.square3 {
+  position: relative;
+  left: 39.25%;
+  bottom: 230px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50);
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.square3:hover {
+  animation: colorAnimation 1s;
+}
+
+.square4 {
+  position: relative;
+  left: 31.75%;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50);
+  display: inline-block;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.square4:hover {
+  animation: colorAnimation 1s;
+}
+
+@keyframes colorAnimation {
+  0% { background: linear-gradient(45deg, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50); }
+  2% { background: linear-gradient(45deg, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50, #F7B538); }
+  4% { background: linear-gradient(45deg, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34); }
+  6% { background: linear-gradient(45deg, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30); }
+  8% { background: linear-gradient(45deg, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C); }
+  10% { background: linear-gradient(45deg, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028); }
+  12% { background: linear-gradient(45deg, #D36420, #CD562C, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224); }
+  14% { background: linear-gradient(45deg, #CD562C, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420); }
+  16% { background: linear-gradient(45deg, #C74738, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C); }
+  18% { background: linear-gradient(45deg, #C13944, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738); }
+  20% { background: linear-gradient(45deg, #BB2B50, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944); }
+  22% { background: linear-gradient(45deg, #F7B538, #F1AA34, #EB9C30, #E58E2C, #DF8028, #D97224, #D36420, #CD562C, #C74738, #C13944, #BB2B50); }
+}
+
+/*---------------------Scroll Message---------------------*/
+.scroll-message {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  left: 50%;
+  bottom: 60px;
+  font-weight: bold;
+  color: #F19C79;
+  animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/*---------------------Lists---------------------*/
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+/*---------------------Footer---------------------*/
+footer {
+  background-color: #000F08;
+  color: #F5FFF8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  height: 100px;
+  line-height: 100px;
+}
+
+footer p {
+  margin-right: 70px;
+}
+
+/*---------------------Images---------------------*/
+.profile-pic {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  right: 35%;
+  bottom: 120px;
+  border-radius: 30%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.5);
+  transition: all 1s ease;
+}  
+
+.profile-pic2 {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 30%;
+  bottom: 100px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.5);
+  transition: all 1s ease;
+} 
+
+.profile-pic:hover{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
+  transform: translateY(10px);
+}
+
+.profile-pic2:hover{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
+  transform: translateY(10px);
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 71%;
+  bottom: 90px;
+  transform: scaleX(-1);
+}
+
+.arrowHome {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.experience-image {
+  width: 20px;
+  height: 20px;
+}
+
+.square-image {
+  width: 20px;
+  height: 150px;
+}
+
+/*---------------------Text Box---------------------*/
+.box-container {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 70%;
+  height: auto;
+  background-color: #F0F5F9;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+/*---------------Used for LinkedIn and GitHub links-------------*/
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.link-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-icon:hover {
+  transform: rotate(360deg);
+  }
+
+.link {
+  text-decoration: none;
+  transition: background-color 1s ease-in-out;
+}
+
+.link:hover {
+  color: #F19C79;
+}
+
+/*---------------------Security+ Badge---------------------*/
+.badge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+/*---------------------Horizontal Line Animation---------------------*/
+.animated-line {
+  width: 100%;
+  height: 1px;
+  background-color: #F19C79;
+  animation: animate-line 1.6s ease-in-out;
+}
+
+@keyframes animate-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/*---------------------TTT Game---------------------*/
+/* Style the game board */
+/* Center the game board and the restart button */
+.game, #restartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/* Style the game board */
+.game {
+  background-color: #F0F5F9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cell {
+  background-color: #d5d9dd;
+  border: none;
+  border-radius: 10px;
+  color: #F19C79;
+  cursor: pointer;
+  font-size: 50px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.cell:hover {
+  background-color: #e6e5e5;
+}
+
+/* Style the restart button */
+#restartButton {
+  background-color: #2ECC40;
+  border: none;
+  border-radius: 10px;
+  color: #F0F5F9;
+  background-color: #1C3738;
+  cursor: pointer;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  width: 200px;
+}
+
+#restartButton:hover {
+  background-color: #F19C79;
+}
+
+/*---------------------Special Paragraphs---------------------*/
+.homep {
+  position: relative;
+  width: 50%;
+  left: 50%;
+  bottom: 450px;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  padding-top: 1em;
+}
+
+.aboutmep {
+  position: relative;
+  width: 50%;
+  bottom: 430px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutmep2 {
+  position: relative;
+  width: 100%;
+  bottom: 430px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*---------------------Hover to Show More---------------------*/
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #BBDCDD;
+  color: #000F08;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="../images/EH.png">
+    <meta charset="UTF-8">
+    <title>Evan Hanson</title>
+    <link rel="stylesheet" type="text/css" href="../Stylesheet.css">
+    <script>
+        document.getElementById("play").addEventListener("click", function() {
+          var userChoice = prompt("Do you choose rock, paper, or scissors?");
+          var computerChoice = Math.random();
+          if (computerChoice < 0.34) {
+            computerChoice = "rock";
+          } else if (computerChoice <= 0.67) {
+            computerChoice = "paper";
+          } else {
+            computerChoice = "scissors";
+          }
+          var result = compare(userChoice, computerChoice);
+          alert("You chose " + userChoice + " and the computer chose " + computerChoice + ".\n" + result);
+        });
+        
+        function compare(choice1, choice2) {
+          if (choice1 === choice2) {
+            return "The result is a tie!";
+          } else if (choice1 === "rock") {
+            if (choice2 === "scissors") {
+              return "You win!";
+            } else {
+              return "You lose. Try again.";
+            }
+          } else if (choice1 === "paper") {
+            if (choice2 === "rock") {
+              return "You win!";
+            } else {
+              return "You lose. Try again.";
+            }
+          } else if (choice1 === "scissors") {
+            if (choice2 === "paper") {
+              return "You win!";
+            } else {
+              return "You lose. Try again.";
+            }
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <h2 class="top_title">~ Evan Hanson ~</h2>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="../index.html">About Me</a></li>
+            <li><a href="../HTML/work_experience.html">Work Experience</a></li>
+            <li><a href="../HTML/projects.html">Projects</a></li>
+            <li><a href="../HTML/college_classes.html">College Classes</a></li>
+            <li><a href="../HTML/skills_involvement.html">Skills / Involvement</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../HTML/game.html">Game</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+    <h1>Rock-Paper-Scissors Game - (currently not working)</h1>
+    <p>
+      <button onclick="playGame('rock')">Rock</button>
+      <button onclick="playGame('paper')">Paper</button>
+      <button onclick="playGame('scissors')">Scissors</button>
+    </p>
+</main>
+<footer>
+  <p>Copyright © 2023 Evan Hanson</p>
+</footer>
+  </body>
+</html>
