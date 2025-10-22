@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evan Hanson | Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p class="tagline">Creating, building, and exploring the web.</p>
+    <button id="theme-toggle">🌙</button>
+  </header>
+
+  <main>
+    <section class="projects">
+      <a href="https://project1.example.com" target="_blank" class="project-card">
+        <h2>Personal Portfolio</h2>
+        <p>Online resume.</p>
+      </a>
+      <a href="https://project2.example.com" target="_blank" class="project-card">
+        <h2>Hanson Fam Vids</h2>
+        <p>Collection of family travel videos.</p>
+      </a>
+      <a href="https://project3.example.com" target="_blank" class="project-card">
+        <h2>Project Three</h2>
+        <p>Another awesome experiment or website.</p>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Evan Hanson • <a href="evan00hanson@gmail.com">Contact</a></p>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      toggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+
+    // Year auto-update
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
